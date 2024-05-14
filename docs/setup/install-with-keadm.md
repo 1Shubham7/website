@@ -2,14 +2,13 @@
 title: Installing KubeEdge with Keadm
 sidebar_position: 3
 ---
-Keadm is used to install the cloud and edge components of KubeEdge. It is not responsible for installing K8s and runtime.
+Keadm is used to install the cloud and edge components of KubeEdgebut it does not handle the installation of K8s and its runtime environment.
 
-Please refer [kubernetes-compatibility](https://github.com/kubeedge/kubeedge#kubernetes-compatibility) to get **Kubernetes compatibility** and determine what version of Kubernetes would be installed.
+Please refer to the [kubernetes-compatibility](https://github.com/kubeedge/kubeedge#kubernetes-compatibility) documentation to check **Kubernetes compatibility** and ascertain the Kubernetes version that will be installed.
 
 ## Limitation
 
-- Need super user rights (or root rights) to run.
-
+- Needs super user rights (or root rights) to run.
 
 ## Install keadm
 
@@ -29,10 +28,7 @@ There're three ways to download a `keadm` binary
   docker run --rm kubeedge/installation-package:v1.12.1 cat /usr/local/bin/keadm > /usr/local/bin/keadm && chmod +x /usr/local/bin/keadm
   ```
 
-- Build from source
-  
-    ref: [build from source](./install-with-binary#build-from-source)
-
+- [Build from source](./install-with-binary#build-from-source)
 
 ## Setup Cloud Side (KubeEdge Master Node)
 
